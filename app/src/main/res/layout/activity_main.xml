@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4cd137">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gojek"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gojek"/>
+    </RelativeLayout>
+   <GridLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:columnCount="2">
+           <ImageButton
+               android:id="@+id/mart"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:background="@drawable/menu_gomart" />
+           <ImageButton
+               android:id="@+id/food"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:background="@drawable/menu_gofood"/>
+
+           <ImageButton
+               android:id="@+id/send"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:background="@drawable/menu_gosend"/>
+           <ImageButton
+               android:id="@+id/ride"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:background="@drawable/menu_goride"/>
+
+
+   </GridLayout>
+</LinearLayout>
